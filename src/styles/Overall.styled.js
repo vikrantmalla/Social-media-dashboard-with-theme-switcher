@@ -121,6 +121,12 @@ h2{
     color: hsl(228, 34%, 66%);
     letter-spacing: .2rem;
     text-align: center;
+    font-weight: 400;
+}
+@media (min-width: 87em) {
+    h2{
+       font-size : 1rem ;
+    }
 }
 `
 
@@ -144,13 +150,15 @@ export const OverallcardGrowth = styled.div `
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: .2rem;
+    font-weight: 700;
+    font-size: .9rem;
 
 .postive {
-    color: hsl(163, 72%, 41%);
+    color: ${(props) => props.theme.ColorLimeGreen};
 }
 .negative {
-    color: hsl(356, 69%, 56%);
+    color: ${(props) => props.theme.ColorBrightRed};
 }
 
 `

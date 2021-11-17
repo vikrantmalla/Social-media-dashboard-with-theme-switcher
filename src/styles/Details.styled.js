@@ -16,6 +16,10 @@ export const DetailsHeading = styled.div `
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
     color: hsl(0, 0%, 100%);
+    font-weight: 700;
+@media (min-width: 87em) {
+        margin-bottom: 0;
+}
 `
 export const CardContainer = styled.div `
     display: grid;
