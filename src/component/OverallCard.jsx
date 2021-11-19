@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import overall from '../api/../api/overall'
 import { Overallcard, OverallcardTitle, OverallcardGrowth   } from '../styles/Overall.styled'
 const OverallCard = () => {
-    const [stats] = useState(overall);
     return (
         <>
             {
-                stats.map((curElem) => {
+                overall.map((curElem) => {
                     const { id, image, imageAlt, username, followerno, subheading, icon, status, iconAlt, stats } = curElem;
                     return (
                         < Overallcard key={id} >

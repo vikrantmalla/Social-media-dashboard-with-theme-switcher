@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Details from '../api/details'
 import { Detailscard, DetailscardGrowth } from '../styles/Details.styled'
 const DetailsCard = () => {
-    const [detailsData] = useState(Details)
+    
     return (
         <>
             {
-                detailsData.map((curElem) => {
-
+                Details.map((curElem) => {
                     const { id, title, no, image, imageAlt, status, icon, iconAlt, stats } = curElem;
                     return (
                         <Detailscard key={id}>
